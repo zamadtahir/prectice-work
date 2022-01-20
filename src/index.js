@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Try_work from './Try_work';
+
 ReactDOM.render(
-  <React.StrictMode>
+
+  <>
+<Try_work/>
+  <h1>hellow world</h1>
+  <h2>hello 
+  </h2>
+  
     <App />
-  </React.StrictMode>,
+     </>,
   document.getElementById('root')
 );
 
