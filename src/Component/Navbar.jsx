@@ -52,7 +52,7 @@ const searchToggle = () =>{
         <i className="fas fa-search" id="search-icon" onClick={searchToggle}></i>
         <a href="#" className=" fas fa-heart"></a>
         <a href="#" className=" fas fa-shopping-cart"></a>
-        <a className="fas fa-user" id="login-icon" href="#loginForm" onClick={loginToggle} ></a>
+        <a className="fas fa-user" id="login-icon" href="#loginForm"  ></a>
      </div>
 
     
