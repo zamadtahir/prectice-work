@@ -14,7 +14,7 @@ import React from "react"
        <p> We source our quality ingredients from local suppliers and the world's most trusted brands.
         Food Safety Keeping our food and guests safe</p>
 
-        <button className="btn">order now</button>
+       <a href="#order"> <button className="btn" >order now</button> </a>
      </div>
 
        

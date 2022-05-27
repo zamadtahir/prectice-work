@@ -364,6 +364,9 @@ span.price{
   padding: .8rem 3rem;
   text-decoration: none;
 }
+.menu-dish-btn{
+  margin-top: 0;
+}
 .btn:hover{
   background: #27ae60;
   letter-spacing: .1rem;

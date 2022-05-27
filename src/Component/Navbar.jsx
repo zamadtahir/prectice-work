@@ -27,17 +27,17 @@ const searchToggle = () =>{
         document.querySelector('#search-form').classList.remove('active');
       }
 }
-     
+  
     return(
         
      <header>
       <div>
-          <a class="logo" href="#"><i class="fas fa-utensils"></i>Stiller's</a>
-          <img class="logo-img" src="images/images-removebg-preview1.png" alt="" />
+          <a className="logo" href="#"><i className="fas fa-utensils"></i>Stiller's</a>
+          <img className="logo-img" src="images/images-removebg-preview1.png" alt="" />
      </div>
 
      <div>
-      <nav class="navbar">
+      <nav className="navbar">
         <a href="#home">home</a>
         <a href="#dishes">dishes</a>
         <a href="#about">about</a>
@@ -47,12 +47,12 @@ const searchToggle = () =>{
         </nav>
      </div>
       
-     <div class="icons">
-        <i class="fas fa-bars" id="menu-bars" onClick={menuTogle}></i>
-        <i class="fas fa-search" id="search-icon" onClick={searchToggle}></i>
-        <a href="#" class=" fas fa-heart"></a>
-        <a href="#" class=" fas fa-shopping-cart"></a>
-        <a class="fas fa-user" href="login.html"></a>
+     <div className="icons">
+        <i className="fas fa-bars" id="menu-bars" onClick={menuTogle}></i>
+        <i className="fas fa-search" id="search-icon" onClick={searchToggle}></i>
+        <a href="#" className=" fas fa-heart"></a>
+        <a href="#" className=" fas fa-shopping-cart"></a>
+        <a className="fas fa-user" id="login-icon" href="#loginForm" onClick={loginToggle} ></a>
      </div>
 
     

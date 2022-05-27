@@ -14,7 +14,7 @@ export default function Dishes(props)
                  <h3> cookd with love</h3>
               <Stars />
                  <span className="price">$9.99</span>
-                 <a href="#" className="btn"> add to cart</a>
+                 <a href="#" className="btn menu-dish-btn"> add to cart</a>
        </div>
        </div>
        </section> </>
