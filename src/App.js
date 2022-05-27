@@ -11,7 +11,7 @@ import Review_heading from "./Component/Review_heading";
 import Order from "./Component/Order";
 import Footer from "./Component/Footer";
 import Search from "./Component/Search";
-import TodoL from "../TodoL";
+import TodoL from "./Component/TodoL";
 import Dishimg from "./ImgComponents/DishImg";
 import Menuimg from "./ImgComponents/MenuImg";
 
