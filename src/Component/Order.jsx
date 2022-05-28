@@ -10,6 +10,7 @@ export default function Order() {
     console.log(contactInfo);
   };
 
+  
   return (
     <>
       <section className="order" id="order">
