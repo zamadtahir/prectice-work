@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Order() {
-  const [contactInfo, setContactInfo] = useState({ name: "", num: "", order: "", extra: "", cnt: "", date: "", adress: "", msg: "", tnc: "" });
+  const [contactInfo, setContactInfo] = useState({name:"",num:"",order:"",extra:"",cnt:"",date:"",adress:"",msg:"",tnc:""});
   const handleChange = (event) => {
     setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
   };
@@ -15,7 +15,6 @@ export default function Order() {
       <section className="order" id="order">
         <h3 className="sub-heading">order now</h3>
         <h1 className="heading"> free and fast</h1>
-        {/* <form onSubmit ={getFormData} >  */}
         <form onSubmit={handleSubmit}>
           <div className="inputbox">
             <div className="input">
