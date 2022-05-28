@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Order() {
-  const [contactInfo, setContactInfo] = useState({name: "",num: "",order: "",extra:"",cnt:"",date:"",adress: "",msg: "",tnc:""});
+  const [contactInfo, setContactInfo] = useState({ name: "", num: "", order: "", extra: "", cnt: "", date: "", adress: "", msg: "", tnc: "" });
   const handleChange = (event) => {
     setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
   };
@@ -10,7 +10,6 @@ export default function Order() {
     console.log(contactInfo);
   };
 
-  
   return (
     <>
       <section className="order" id="order">
@@ -42,9 +41,9 @@ export default function Order() {
               <input type="text" placeholder="how many orders" name="cnt" value={contactInfo.cnt} onChange={handleChange} />
             </div>
             <div className="input">
-                  <span>date and time</span>
-                  <input type="datetime-local" name="date" value={contactInfo.date} onChange={handleChange} />
-                </div>
+              <span>date and time</span>
+              <input type="datetime-local" name="date" value={contactInfo.date} onChange={handleChange} />
+            </div>
             <div className="input">
               <span>your adress</span>
               <textarea type="text" placeholder="enter your adress" cols="30" rows="10" name="adress" value={contactInfo.adress} onChange={handleChange}></textarea>
