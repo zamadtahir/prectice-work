@@ -1,13 +1,45 @@
-import React from "react"
+import React ,  { createContext } from "react"
+import Dishimg from "../ImgComponents/DishImg";
+import Menuimg from "../ImgComponents/MenuImg";
+import About from "./About";
+import Dishes from "./Dishes";
+import DisheshHeading from "./DishesHeading";
+import Footer from "./Footer";
+import Menu from "./Menu";
+import MenuHeading from "./MenuHeading";
+import Order from "./Order";
+import Review_heading from "./Review_heading";
+import Search from "./Search";
+import Revew from "./Revew";
+import Review from "./Review";
+import Navbar from "./Navbar";
 
 
+const PushToCart = createContext();
 
- export default function Home_section() {
+
+const dishes = {
+  display: 'flex',
+  justifyContent: 'space-around',
+  flexWrap: 'wrap'
+}
+
+function dishpart(val) {
+  return (
+    <Dishes imgsrc={val.imgurl} />
+  );
+
+}
+function menupart(val) {
+  return (
+  <Menu imgsrc={val.imgurl} />);
+}
+ export default function Home() {
      return(
 <>
-<section className="home home-bg" id="home">
+<section className="home home-bg" id="home" >
 
-   <div className="home container" id="home">
+   <div className="home container">
      <div className="col-3">
        <h1>Today's Special</h1> <br />
        <h3>cooked with love</h3><br />
@@ -44,6 +76,26 @@ import React from "react"
 <div className="col-2"></div>
 </div>
  </section>
+ <Navbar />
+ <Search />
+ <DisheshHeading />
+ <PushToCart.Provider value= {"cartItems"}>
+      <div style={dishes}>
+        {Dishimg.map(dishpart)} ;
+      </div>
+  </PushToCart.Provider>
+  <About />
+  <MenuHeading />
+      <div style={dishes}>
+        {Menuimg.map(menupart)};
+      </div>
+  <Review_heading />
+  <Revew />
+  <Review imgsrc="../Images/EHAAB.jpeg" name="EHAB" />
+  <Review imgsrc="../Images/EIFA.jpeg" name="EIFA" />
+  <Review imgsrc="../Images/DAWOOD.jpeg" name="DAWOOD" />
+  <Order />
+  <Footer />
 </>
 
 
@@ -55,5 +107,7 @@ import React from "react"
 
 
  }
+
+ export {PushToCart} ;
 
 

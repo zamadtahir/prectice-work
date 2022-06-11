@@ -16,23 +16,23 @@ const Menuimg = [
     imgurl:"../Images/menu4.jpg"
     },
     {
-    id:"1" ,
+    id:"5" ,
     imgurl:"../Images/menu6.jpg"
     },
     {
-    id:"2" ,
+    id:"6" ,
     imgurl:"../Images/menu7.jpg"
     },
     {
-    id:"3" ,
+    id:"7" ,
     imgurl:"../Images/menu8-1.jpg"
     },
     {
-    id:"4" ,
+    id:"8" ,
     imgurl:"../Images/menu9.jpg"
     },
     {
-    id:"4" ,
+    id:"9" ,
     imgurl:"../Images/pizza1.jpg"
     }
 

@@ -2,7 +2,7 @@
 import React , { useState } from "react";
 
 
-const TodoL = () => {
+const Revew = () => {
 
 const [review, newreview] = useState("")
 const [reviewcontent, setreview] = useState([]);
@@ -36,4 +36,4 @@ const listofreview = () => {
     )
 
 }
-export default TodoL;
+export default Revew;

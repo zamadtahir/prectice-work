@@ -68,7 +68,9 @@
   }
 
   header .icons i,
-  header  .icons a{
+  header  .icons Link,
+  header  .icons a
+  {
     cursor: pointer;
     padding: 0.5rem 1.5rem;
     margin-left: .5rem;
@@ -82,8 +84,10 @@
   }
   
   header .icons i:hover,
-  header .icons a:hover{
+  header .icons a:hover,
+  header  .icons Link a:hover{
     color: #fff;
+    cursor: pointer;
     background: #27ae60;
     transform: rotate(360deg);
   }
@@ -92,6 +96,10 @@
     display: none;
   }
 
+  /* cart css */
+.sCart{
+  margin: 6% 1% 0;
+}
 
   @media (max-width:900px){
     html{
@@ -135,6 +143,7 @@ header .navbar a{
   margin: 0 1rem;
 }
 }
+
 
 
 @media (max-width:1075px){
@@ -850,3 +859,6 @@ padding: 0 2rem 0 .5rem;
   color:#27ae60;
   text-decoration: underline;
 }
+
+
+/* login css */
