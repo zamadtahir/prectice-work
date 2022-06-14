@@ -1,4 +1,4 @@
-import React ,  { useState } from "react"
+import React, { useState } from "react"
 import Dishimg from "../ImgComponents/DishImg";
 import Menuimg from "../ImgComponents/MenuImg";
 import About from "./About";
@@ -33,54 +33,61 @@ const dishes = {
 // }
 function menupart(val) {
   return (
-  <Menu key={val.id} imgsrc={val.imgurl} />);
+    <Menu key={val.id} imgsrc={val.imgurl} />);
 }
- 
 
-  export default function Home(){
-    const [cart , setCart] = useState ([]);
 
-    const handleClick = (item) =>{
+export default function Home({ item }) {
+  const [cart, setCart] = useState([]);
 
-       cart.push(item);
-       console.log(cart);
-       const handleClick = (item) => {
-        setCart([...cart,item]);
-       }
-    };
-     return(
-<>
-<Hero />
- <Navbar />
- <Search /> 
-  <DisheshHeading />
-      {/* <div style={dishes}>
-        {Dishimg.map(dishpart)} ;
-      </div> */}
+  const handleClick = (item) => {
+
+    cart.push(item);
+    console.log(cart);
+    const handleClick = (item) => {
+      setCart([...cart, item]);
+    }
+  };
+  // const handleChange = (item, d) => {
+  //   const ind = cart.indexOf(item);
+  //   const arr = cart;
+  //   arr[ind].amount += d;
+
+  //   if (arr[ind].amount === 0) arr[ind].amount = 1;
+  //   setCart([...arr]);
+  // };
+  return (
+    <>
+      <Hero />
+      <Navbar />
+      <Search />
+      <DisheshHeading />
+
       <DishesOne handleClick={handleClick} />
-  <About />
-  <MenuHeading />
+
+      <About />
+      <MenuHeading />
       <div style={dishes}>
         {Menuimg.map(menupart)};
       </div>
-  <Review_heading />
-  <Revew />
-  <Review imgsrc="../Images/EHAAB.jpeg" name="EHAB" />
-  <Review imgsrc="../Images/EIFA.jpeg" name="EIFA" />
-  <Review imgsrc="../Images/DAWOOD.jpeg" name="DAWOOD" />
-  <Order />
-  <Footer />
-</>
+      <Review_heading />
+      <Revew />
+      <Review imgsrc="../Images/EHAAB.jpeg" name="EHAB" />
+      <Review imgsrc="../Images/EIFA.jpeg" name="EIFA" />
+      <Review imgsrc="../Images/DAWOOD.jpeg" name="DAWOOD" />
+      <Order />
+      <Footer />
+    </>
 
 
 
 
 
-     )
+  )
 
 
 
- }
+}
 
 
 

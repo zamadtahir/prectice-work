@@ -5,7 +5,9 @@ import React , { useState } from "react";
 const Revew = () => {
 
 const [review, newreview] = useState("")
-const [reviewcontent, setreview] = useState([]);
+const [reviewcontent, setreview] = useState([
+    
+]);
 
 
 const userreview = (event) =>{
