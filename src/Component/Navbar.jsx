@@ -69,7 +69,7 @@ export default function Navbar() {
         <i className="fas fa-search" id="search-icon" onClick={searchToggle}></i>
         <a href="#" className=" fas fa-heart"></a>
         {/* <a href="#" className=" fas fa-shopping-cart"></a> */}
-        <Link to="/shopingcart" className="fas fa-shopping-cart" ></Link>
+        <Link to="/cart" className="fas fa-shopping-cart" ></Link>
         <Link to="/login" className="fas fa-user" id="login-icon" ></Link>
       </div>
 

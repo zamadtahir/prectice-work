@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import "../index.css";
 
-export default function ShopingCart () {
+export default function Cart () {
 
     return(
         <>
@@ -13,7 +13,7 @@ export default function ShopingCart () {
       </div>
         </header>
       <section className="shoping-cart">
-<h1>cart items</h1>
+      <h1>cart items</h1>
       </section>
           
         </>
