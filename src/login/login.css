@@ -28,7 +28,7 @@ html, body{
     box-shadow: 0 0 20px 9px #ff61241f;
     border-radius: 30px;
 }
-.toggle-btn{
+.toggle-butn{
     padding: 10px 30px;
     cursor: pointer;
     background: transparent;
@@ -36,7 +36,7 @@ html, body{
     outline: none;
     position: relative;
 }
-#logsBtn{
+#butn{
     top: 0;
     left: 0;
     position: absolute;
@@ -63,7 +63,7 @@ html, body{
     outline: none;
     background: transparent;
 }
-.login-submit-btn{
+.submit-butn{
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;
@@ -78,17 +78,7 @@ html, body{
 a{
     text-decoration: none;
 }
-.home{
-    width: 82%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: 3rem 1.7rem;
-    background:#27ae60 ;
-    border: 0;
-    outline: none;
-    border-radius: 30px;  
-}
+
 .check-box{
     margin: 30px 10px 30px 0;
 }

@@ -1,4 +1,4 @@
-import React ,  { createContext } from "react"
+import React ,  { useState } from "react"
 import Dishimg from "../ImgComponents/DishImg";
 import Menuimg from "../ImgComponents/MenuImg";
 import About from "./About";
@@ -13,9 +13,10 @@ import Search from "./Search";
 import Revew from "./Revew";
 import Review from "./Review";
 import Navbar from "./Navbar";
+import Hero from "./Hero";
+import DishesOne from "./DishesOne";
 
 
-const PushToCart = createContext();
 
 
 const dishes = {
@@ -24,66 +25,39 @@ const dishes = {
   flexWrap: 'wrap'
 }
 
-function dishpart(val) {
-  return (
-    <Dishes imgsrc={val.imgurl} />
-  );
+// function dishpart(val) {
+//   return (
+//     <Dishes key={val.id} imgsrc={val.imgurl} />
+//   );
 
-}
+// }
 function menupart(val) {
   return (
-  <Menu imgsrc={val.imgurl} />);
+  <Menu key={val.id} imgsrc={val.imgurl} />);
 }
- export default function Home() {
+ 
+
+  export default function Home(){
+    const [cart , setCart] = useState ([]);
+
+    const handleClick = (item) =>{
+
+       cart.push(item);
+       console.log(cart);
+       const handleClick = (item) => {
+        setCart([...cart,item]);
+       }
+    };
      return(
 <>
-<section className="home home-bg" id="home" >
-
-   <div className="home container">
-     <div className="col-3">
-       <h1>Today's Special</h1> <br />
-       <h3>cooked with love</h3><br />
-       <p> We source our quality ingredients from local suppliers and the world's most trusted brands.
-        Food Safety Keeping our food and guests safe</p>
-
-       <a href="#order"> <button className="btn" >order now</button> </a>
-     </div>
-
-       
-   <div className="col-7">
- <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item swiper-slide active">
-      <img src="images/menu7.jpg" className="d-block w-100" alt="today speacile dish" />
-    </div>
-    <div className="carousel-item swiper-slide">
-      <img src="images/image2.jpeg" className="d-block w-100" alt="today speacile dish" />
-    </div>
-    <div className="carousel-item swiper-slide">
-      <img src="images/menu9.jpg" className="d-block w-100" alt="today speacile dish"  />
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
-<div className="col-2"></div>
-</div>
- </section>
+<Hero />
  <Navbar />
- <Search />
- <DisheshHeading />
- <PushToCart.Provider value= {"cartItems"}>
-      <div style={dishes}>
+ <Search /> 
+  <DisheshHeading />
+      {/* <div style={dishes}>
         {Dishimg.map(dishpart)} ;
-      </div>
-  </PushToCart.Provider>
+      </div> */}
+      <DishesOne handleClick={handleClick} />
   <About />
   <MenuHeading />
       <div style={dishes}>
@@ -108,6 +82,5 @@ function menupart(val) {
 
  }
 
- export {PushToCart} ;
 
 

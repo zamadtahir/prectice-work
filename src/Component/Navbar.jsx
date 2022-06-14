@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import {Link as Link2} from "react-scroll";
 
 export default function Navbar() {
+  
+
   // const home = useRef(null);
   // const scrollToSection = (elementRef) => {
   //   window.scrollTo({
@@ -67,7 +69,7 @@ export default function Navbar() {
         <i className="fas fa-search" id="search-icon" onClick={searchToggle}></i>
         <a href="#" className=" fas fa-heart"></a>
         {/* <a href="#" className=" fas fa-shopping-cart"></a> */}
-        <Link to="/shopingcart" className="fas fa-shopping-cart"></Link>
+        <Link to="/shopingcart" className="fas fa-shopping-cart" ></Link>
         <Link to="/login" className="fas fa-user" id="login-icon" ></Link>
       </div>
 

@@ -24,7 +24,7 @@ const listofreview = () => {
             <br />
             <input className="review--input" id="review-box" type="text" placeholder="your opinion " onChange={userreview} />
             <br />
-            <button className="btn review--btn" onClick={listofreview}> post review</button>
+            <button className="butn review--btn" onClick={listofreview}> post review</button>
             <ol>
                
                { reviewcontent.map((reviews) =>{

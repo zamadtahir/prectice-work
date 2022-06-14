@@ -34,7 +34,7 @@ export default function About(){
       <span>24/7 avalbel</span>
     </div>
   </div>
-  <a href="#" className="btn">learn more</a>
+  <a href="#" className="butn">learn more</a>
   
       
       </div>

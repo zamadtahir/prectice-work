@@ -4,7 +4,6 @@ import Home from "./Component/Home";
 import Login from "./login/Login";
 import ShopingCart from "./Component/ShopingCart";
 
-const GlobalProvider =createContext(); 
 
 export default function App() {
   

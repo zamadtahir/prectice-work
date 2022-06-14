@@ -1,13 +1,13 @@
 import React  from "react";
 import "./login.css"
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Login () {
 // const {id}= useParams();
 
 var x = document.getElementById("login")
-var y = document.getElementById("register")      
-var z = document.getElementById("btn")
+var y = document.getElementById("register")
+var z = document.getElementById("butn")
 function register(){
     x.style.left="-400px";
     y.style.left="50px";
@@ -30,16 +30,16 @@ function login(){
         <div className="login-page">
     <div className="login-form">
     <div className="login-metrial">
-    <div id="logs-btn">
-        <button type="button" className="toggle-btn" onClick={login}>Log in</button>
-        <button type="button" className="toggle-btn" onClick={register}>Register</button>
-    </div>    
+        <div id="butn">
+        </div>
+        <button type="button" className="toggle-butn" onClick={login}>Log in</button>
+        <button type="button" className="toggle-butn" onClick={register}>Register</button>
     </div>
      <form id="login" className="input-group">
         <input type="text" className="input-field" placeholder="User Id" required />
         <input type="text" className="input-field" placeholder="Enter Password" required />
         <input type="checkbox" className="check-box" /><span className="log-span">Remember Password</span>
-        <button type="submit" className="login-submit-btn">Log in</button>
+        <button type="submit" className="submit-butn">Log in</button>
         
     </form>
     <form id="register" className="input-group">
@@ -47,8 +47,8 @@ function login(){
             <input type="email" className="input-field" placeholder="Email Id" required />
             <input type="text" className="input-field" placeholder="Enter Password" required />
             <input type="text" className="input-field" placeholder="Confrim Password" required />
-            <input type="checkbox" className="check-box" /><span className="register-form" >I agree to the terms & conditions</span>
-            <button type="submit" className="login-submit-btn">Register</button>
+            <input type="checkbox" className="check-box" /><span className="log-span register-form">I agree to the terms & conditions</span>
+            <button type="submit" className="submit-butn">Register</button>
     </form>
 </div>
 </div>

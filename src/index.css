@@ -299,6 +299,7 @@ height: 250px;
 
 section.dishes{
   margin-top: 6%;
+  
 }
 
 img.dish-img{
@@ -332,11 +333,15 @@ img:hover{
 h3.dishes-text{
   color: #27ae60;
 }
-.dishes .box-container{
-
+.dishes-one{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+.dishes .box-container{
+
+
+  
 
   /*display: grid;
   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -355,6 +360,7 @@ h3.dishes-text{
   text-align: center;
   width: 252px;
   height: 290px;
+  
 }
 
 span.price{
@@ -362,7 +368,7 @@ span.price{
   color: #27ae60;
   margin-right: 1rem;
 }
-.btn{
+.butn{
   margin-top: 1rem;
   display: inline-block;
   font-size: 1.7rem;
@@ -376,7 +382,7 @@ span.price{
 .menu-dish-btn{
   margin-top: 0;
 }
-.btn:hover{
+.butn:hover{
   background: #27ae60;
   letter-spacing: .1rem;
 }
@@ -813,7 +819,7 @@ width: 100%;
   resize: none;
 }
 
-.order form .btn{
+.order form .butn{
 
   margin-top: 0rem;
 
@@ -862,3 +868,7 @@ padding: 0 2rem 0 .5rem;
 
 
 /* login css */
+/* shoping cart */
+.shoping-cart{
+  margin: 7%;
+}

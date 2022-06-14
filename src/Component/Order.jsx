@@ -57,7 +57,7 @@ export default function Order() {
             </div>
           </div>
           <input type="checkbox" name="tnc" value={contactInfo.tnc} onChange={handleChange} /> <span className="trms">Accpt terms and conditions</span>
-          <button className="btn" onClick={submitInfo}>order now</button>
+          <button className="butn" onClick={submitInfo}>order now</button>
         </form>
       </section>
     </>
